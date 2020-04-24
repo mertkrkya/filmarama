@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/*navbar*/
+
+nav {
+    background-image: url(img/bg.jpg); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+#logo-box {
+    float: left;
+    padding-top: .5rem;
+}
+
+#logo-box .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+#nav-link {
+    float: right;
+}
+
+#nav-link .nav-item,
+form-inline {
+    float: left;
+    margin: .4rem;
+}
+
+#nav-link .nav-link {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: .1rem;
+    transition: color .3s;
+}
+
+#nav-link .nav-link:hover {
+    color: #18bc9c;
+}
+
+
+/*search*/
+
+
+.search-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 55rem;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-area .input {
+    width: 85%;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.searchbtn {
+    background: #eaeaea;
+    width: 10%;
+    border-radius: 0.5em;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchbtn .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+}
+button{
+    border-style: none;
+}
+
+/*Responsive*/
+
+@media (max-width:600px) {  
+    #nav-link {
+    float: left;
+    padding-left:15rem; 
+}
+}
+
+
+
+
